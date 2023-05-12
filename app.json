@@ -1,0 +1,184 @@
+{
+  "name": "TorrentLeechBot",
+  "description": "A Telegram Torrent (and youtube-dl) Leecher based on Pyrogram",
+  "logo": "https://images.unsplash.com/photo-1562907550-096d3bf9b25c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80",
+  "keywords": [
+    "telegram"
+  ],
+  "repository": "https://github.com/GopalSaraf/TorrentLeechBot",
+  "success_url": "https://t.me/torrentgs",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+      "value": "ANYTHING"
+    },
+    "APP_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "TG_BOT_TOKEN": {
+      "description": "get this value from @BotFather",
+      "value": ""
+    },
+    "AUTH_CHANNEL": {
+      "description": "should be an integer. The ID of the Telegram Group, where the Leecher should work. Take this from @MissRose_bot. Put Group ID",
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "should be an integer. ID of owner of bot",
+      "value": ""
+    },
+    "UPLOAD_AS_DOC": {
+      "description": "True/False. If true all files will be uploaded as documents. Default is False.",
+      "required": false
+    },
+    "CHUNK_SIZE": {
+      "description": "should be an integer",
+      "value": "128",
+      "required": false
+    },
+    "ARIA_TWO_STARTED_PORT": {
+      "description": "should be an integer. The port on which aria2c daemon must start, and keep listening.",
+      "value": "6800",
+      "required": false
+    },
+    "EDIT_SLEEP_TIME_OUT": {
+      "description": "should be an integer. Number of seconds to wait before editing a message.",
+      "value": "5",
+      "required": false
+    },
+    "MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START": {
+      "description": "should be an integer. Number of seconds to wait before cancelling a torrent.",
+      "required": false
+    },
+    "FINISHED_PROGRESS_STR": {
+      "description": "should be a single character.",
+      "required": false
+    },
+    "UN_FINISHED_PROGRESS_STR": {
+      "description": "should be a single character.",
+      "required": false
+    },
+    "TG_OFFENSIVE_API": {
+      "description": "should be an URL accepting the FormParams {i}, {m}, and {t}",
+      "required": false
+    },
+    "INDEX_LINK": {
+      "description": "Enter your index link:",
+      "required": false
+    },
+    "RCLONE_CONFIG": {
+      "description": "Enter your copied text from rclone config. Compulsory for /gleech as well as /tleech command ",
+      "required": false
+    },
+    "DESTINATION_FOLDER": {
+      "description": "Enter your Cloud folder NAME(not ID😅) in which you want to upload/store your files.",
+      "required": false
+    },
+    "CUSTOM_FILE_NAME": {
+      "description": "fill with name u want to prefix the file name like ur channel username🙊, keep empty for do nothing, but add to ur config vars even without input.",
+      "required": false
+    },
+    "LEECH_COMMAND": {
+      "description": "Enter your custom leech command. Default is /leech",
+      "required": false
+    },
+    "GLEECH_COMMAND": {
+      "description": "Enter your custom gleech command. Default is /gleech",
+      "required": false
+    },
+    "LEECH_UNZIP_COMMAND": {
+      "description": "Enter your custom leechunzip command. Default is /leechunzip",
+      "required": false
+    },
+    "LEECH_ZIP_COMMAND": {
+      "description": "Enter your custom leechzip command. Default is /leechzip",
+      "required": false
+    },
+    "GLEECH_UNZIP_COMMAND": {
+      "description": "Enter your custom gleechunzip command. Default is /gleechunzip",
+      "required": false
+    },
+    "GLEECH_ZIP_COMMAND": {
+      "description": "Enter your custom gleechzip command. Default is /gleechzip",
+      "required": false
+    },
+    "YTDL_COMMAND": {
+      "description": "Enter your custom ytdl command. Default is /ytdl",
+      "required": false
+    },
+    "GYTDL_COMMAND": {
+      "description": "Enter your custom gytdl command. Default is /gytdl",
+      "required": false
+    },
+    "PYTDL_COMMAND": {
+      "description": "Enter your custom pytdl command. Default is /pytdl",
+      "required": false
+    },
+    "GPYTDL_COMMAND": {
+      "description": "Enter your custom gpytdl command. Default is /gpytdl",
+      "required": false
+    },
+    "TELEGRAM_LEECH_COMMAND": {
+      "description": "Enter your custom tleech command. Default is /tleech",
+      "required": false
+    },
+    "TELEGRAM_LEECH_UNZIP_COMMAND": {
+      "description": "Enter your custom tleechunzip command. Default is /tleechunzip",
+      "required": false
+    },
+    "CANCEL_COMMAND_G": {
+      "description": "Enter your custom cancel command. Default is /cancel",
+      "required": false
+    },
+    "GET_SIZE_G": {
+      "description": "Enter your custom getsize command. Default is /getsize",
+      "required": false
+    },
+    "STATUS_COMMAND": {
+      "description": "Enter your custom status command. Default is /status",
+      "required": false
+    },
+    "STATS_COMMAND": {
+      "description": "Enter your custom stats command. Default is /stats",
+      "required": false
+    },
+    "HELP_COMMAND": {
+      "description": "Enter your custom help command. Default is /help",
+      "required": false
+    },
+    "SAVE_THUMBNAIL": {
+      "description": "Enter your custom savethumbnail command. Default is /savethumbnail",
+      "required": false
+    },
+    "CLEAR_THUMBNAIL": {
+      "description": "Enter your custom clearthumbnail command. Default is /clearthumbnail",
+      "required": false
+    },
+    "CLONE_COMMAND_G": {
+      "description": "Enter your custom clone command. Default is /clone",
+      "required": false
+    },
+    "CLONE_ZIP_COMMAND": {
+      "description": "Enter your custom clonezip command. Default is /clonezip",
+      "required": false
+    },
+    "CLONE_TAR_COMMAND": {
+      "description": "Enter your custom clonetar command. Default is /clonetar",
+      "required": false
+    },
+    "LIST_COMMAND": {
+      "description": "Enter your custom list command. Default is /list",
+      "required": false
+    },
+    "COMPLETE_LIST_COMMAND": {
+      "description": "Enter your custom completelist command. Default is /completelist",
+      "required": false
+    }
+  },
+  "stack": "container"
+}
