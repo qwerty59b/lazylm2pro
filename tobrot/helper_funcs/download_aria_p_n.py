@@ -73,7 +73,7 @@ async def aria_start():
     # but for now, https://t.me/TrollVoiceBot?start=858
     aria2_daemon_start_cmd.append("--enable-rpc=true")
     aria2_daemon_start_cmd.append("--follow-torrent=mem")
-    aria2_daemon_start_cmd.append("--max-connection-per-server=5")
+    aria2_daemon_start_cmd.append("--max-connection-per-server=2")
     aria2_daemon_start_cmd.append("--max-concurrent-downloads=2")
     aria2_daemon_start_cmd.append("--min-split-size=10M")
     aria2_daemon_start_cmd.append("--rpc-listen-all=false")
@@ -86,7 +86,7 @@ async def aria_start():
     aria2_daemon_start_cmd.append("--split=10")
     aria2_daemon_start_cmd.append("--disk-cache=40M")
     aria2_daemon_start_cmd.append("--optimize-concurrent-downloads=true")
-    aria2_daemon_start_cmd.append("--max-tries=20")
+    aria2_daemon_start_cmd.append("--max-tries=10")
     aria2_daemon_start_cmd.append("--peer-id-prefix=-qB4510-")
     aria2_daemon_start_cmd.append("--peer-agent=qBittorrent/4.5.1")
     aria2_daemon_start_cmd.append("--quiet=true")
