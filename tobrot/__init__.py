@@ -50,14 +50,14 @@ user_specific_config = dict()
 #dotenv.load_dotenv("config.env")
 
 # checking compulsory variable
-for imp in ["TG_BOT_TOKEN", "APP_ID", "API_HASH", "OWNER_ID", "AUTH_CHANNEL"]:
-    try:
-        value = os.environ[imp]
-        if not value:
+#for imp in ["TG_BOT_TOKEN", "APP_ID", "API_HASH", "OWNER_ID", "AUTH_CHANNEL"]:
+    #try:
+       # value = os.environ[imp]
+       # if not value:
             raise KeyError
-    except KeyError:
-        LOGGER.critical(f"Oh...{imp} is missing from config.env ... fill that")
-        exit()
+    #except KeyError:
+      #  LOGGER.critical(f"Oh...{imp} is missing from config.env ... fill that")
+       # exit()
 
 # The Telegram API things
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6099284488:AAENFcuyRMhoFB2jryKooCRD91_l6_ul1EE")
