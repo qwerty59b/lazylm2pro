@@ -47,7 +47,7 @@ sys.excepthook = handle_exception
 
 user_specific_config = dict()
 
-dotenv.load_dotenv("config.env")
+#dotenv.load_dotenv("config.env")
 
 # checking compulsory variable
 for imp in ["TG_BOT_TOKEN", "APP_ID", "API_HASH", "OWNER_ID", "AUTH_CHANNEL"]:
