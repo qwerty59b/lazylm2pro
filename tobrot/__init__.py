@@ -54,7 +54,7 @@ user_specific_config = dict()
     #try:
        # value = os.environ[imp]
        # if not value:
-            raise KeyError
+            #raise KeyError
     #except KeyError:
       #  LOGGER.critical(f"Oh...{imp} is missing from config.env ... fill that")
        # exit()
