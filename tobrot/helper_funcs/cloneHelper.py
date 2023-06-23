@@ -135,7 +135,7 @@ class CloneHelper:
             destination = f"{DESTINATION_FOLDER}"
             idd = "{" f"{self.g_id}" "}"
             cmd = [
-                "gclone",
+                "/content/lazylm2pro",
                 "copy",
                 "--config=rclone.conf",
                 f"{self.dname}:{idd}",
