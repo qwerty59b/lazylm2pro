@@ -135,7 +135,7 @@ class CloneHelper:
             destination = f"{DESTINATION_FOLDER}"
             idd = "{" f"{self.g_id}" "}"
             cmd = [
-                "/app/gopal/gclone",
+                "gclone",
                 "copy",
                 "--config=rclone.conf",
                 f"{self.dname}:{idd}",
