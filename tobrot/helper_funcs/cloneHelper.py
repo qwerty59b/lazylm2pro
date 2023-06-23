@@ -131,7 +131,7 @@ class CloneHelper:
 
     async def gcl(self):
         if self.is_link_public:
-            self.lsg = await self.mess.reply_text(f"Please wait this may take some time depending on the size of the file or folder to be cloned to know if it is finished use /list -search query- or enter directly here to know if it was successful. https://www.suup.workers.dev/0:/")
+            self.lsg = await self.mess.reply_text(f"Please wait this may take some time depending on the size of the file or folder to be cloned to know if it is finished use /list -search query- or enter directly here to know if it was successful. https://mydrive-maxdin.suup.workers.dev/0:/gdriveupmebot/")
             destination = f"{DESTINATION_FOLDER}"
             idd = "{" f"{self.g_id}" "}"
             cmd = [
