@@ -3,7 +3,7 @@ if [[ -n $RCLONE_CONFIG ]]; then
  echo -e "$RCLONE_CONFIG" > rclone.conf
 fi
 chmod +x extract
-python3 -m tobrot
+gunicorn app:app & python3 -m tobrot
 
 
 
