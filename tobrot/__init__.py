@@ -111,8 +111,8 @@ GLEECH_ZIP_COMMAND = os.environ.get("GLEECH_ZIP_COMMAND", "gleechzip")
 YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl")
 GYTDL_COMMAND = os.environ.get("GYTDL_COMMAND", "gytdl")
 RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", "")
-DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "/")
-INDEX_LINK = os.environ.get("INDEX_LINK", "https://mydrive-maxdin.suup.workers.dev/0:/gdriveupmebot")
+DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "gdriveupmebot")
+INDEX_LINK = os.environ.get("INDEX_LINK", "https://mydrive-maxdin.suup.workers.dev/0:")
 TELEGRAM_LEECH_COMMAND = os.environ.get("TELEGRAM_LEECH_COMMAND", "tleech")
 TELEGRAM_LEECH_UNZIP_COMMAND = os.environ.get(
     "TELEGRAM_LEECH_UNZIP_COMMAND", "tleechunzip"
