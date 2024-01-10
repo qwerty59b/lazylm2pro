@@ -117,7 +117,7 @@ async def status_message_f(client, message):
 
         ms_g = (
             f"<b>Bot Uptime</b>: {hr}:{mi}:{se}\n"
-            f"<b>Disk Size: 😎 | <b>Free :</b> {free}\n"
+            f"<b>Disk Size:</b> {total} | <b>Free :</b> {free}\n"
             # f"<b>RAM:</b> {ram}% | <b>CPU:</b> {cpu}%\n"
             # f"<b>DL:</b> {recv} 🔻 | <b>UL:</b> {sent} 🔺 \n"
         )
