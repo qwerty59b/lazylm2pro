@@ -8,7 +8,6 @@ from logging.handlers import RotatingFileHandler
 from collections import defaultdict
 from sys import exit
 from telegraph import Telegraph
-import urllib.request
 import dotenv
 
 if os.path.exists("log.txt"):
@@ -156,18 +155,6 @@ telegraph.create_account(short_name=sname)
 telegraph_token = telegraph.get_access_token()
 
 TELEGRAPHLIMIT = 50
-
-# Rclone Config Via any raw url
-###########################################################################
-try:                                                                      #
-    RCLONE_CONF_URL = os.environ.get('RCLONE_CONF_URL', "https://mydrive-maxdin.suup.workers.dev/0:/BotConf/rclone.conf")               #
-    if len(RCLONE_CONF_URL) == 0:                                         #
-        RCLONE_CONF_URL = None                                            #
-    else:                                                                 #
-        urllib.request.urlretrieve(RCLONE_CONF_URL, 'rclone.conf')   #
-except KeyError:                                                          #
-    RCLONE_CONF_URL = None                                                #
-###########################################################################
 
 def multi_rclone_init():
     if RCLONE_CONFIG:
