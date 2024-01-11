@@ -262,7 +262,7 @@ async def upload_to_gdrive(
         #)
         if INDEX_LINK:
             #use urllib quote for conflictive filename
-            indexurl = f"{INDEX_LINK}/{parse.quote(os.path.basename(file_upload))}/"
+            indexurl = f"{INDEX_LINK}/{parse.quote(os.path.basename(file_upload))}"
             tam_link = indexurl
             LOGGER.info(tam_link)
             button.append(
@@ -381,7 +381,7 @@ async def upload_to_gdrive(
         #)
         if INDEX_LINK:
             #use urllib quote for conflictive filename
-            indexurl = f"{INDEX_LINK}/{parse.quote(os.path.basename(file_upload))}/"
+            indexurl = f"{INDEX_LINK}/{parse.quote(os.path.basename(file_upload))}"
             tam_link = indexurl
             LOGGER.info(tam_link)
             button.append(
