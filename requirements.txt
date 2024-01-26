@@ -1,12 +1,12 @@
-aiohttp>=3.8.1
-aria2p>=0.9.1
+aiohttp==3.8.1
+aria2p==0.9.1
 hachoir
 Pillow
 pyrogram==1.4.16
 tgcrypto
 youtube_dl
 python-dotenv
-beautifulsoup4>=4.8.2
+beautifulsoup4==4.8.2
 bs4
 lxml
 requests
